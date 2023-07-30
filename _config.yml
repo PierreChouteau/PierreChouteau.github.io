@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "P3S group"
+  name             : "Pierre Chouteau"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "ATIAM students"
-  location         : "Ircam, Paris"
+  bio              : "ATIAM student"
+  location         : "Telecom, Palaiseau"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:louis.lalay@atiam.fr"
+      url: "mailto:pierre.chouteau@atiam.fr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/SourceSeparation2022-2023"
+      url: "https://github.com/PierreChouteau"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/SourceSeparation2022-2023"
+      url: "https://github.com/PierreChouteau"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
