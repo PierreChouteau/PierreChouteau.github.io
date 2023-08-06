@@ -40,11 +40,11 @@ All the microphones are used for the separation.
     </center>
   </div>
   <div id="right-column">
-    <!-- content for the right column goes here
+    content for the right column goes here
     <center>
     <strong> Separated </strong>
-    </center> -->
-    <div id="right-column">
+    </center>
+    <div id="left-column">
       <!-- content for the right column goes here -->
       <center>
       <strong> Model 1 </strong>
