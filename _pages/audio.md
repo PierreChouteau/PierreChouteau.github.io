@@ -3,15 +3,15 @@ title: "Audio files"
 layout: single
 permalink: /audio
 author_profile: false
-class: wide
+classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
 excerpt: "Comparison of various separation models" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
-# toc: true
-# toc_label: "Table of Contents"
-# toc_icon: "cog"
-# toc_sticky: true
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
+toc_sticky: true
 ---
 <html>
 
@@ -29,7 +29,7 @@ The piece is written for a quintet: Violins, Flute, Clarinet and Cello. We used 
 
 All the microphones are used for the separation.
 
-## Test d'un tableau pour les résultats
+## BC1song
 
 > Full mix
 <audio controls>
@@ -126,6 +126,12 @@ All the microphones are used for the separation.
     </tbody>
   </table>
 </html>
+
+## BCBQ
+
+## Mono Training Examples
+
+## Cantoria Dataset
 
 ## Separation on full mix without prior information
 
