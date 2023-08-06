@@ -32,12 +32,12 @@ All the microphones are used for the separation.
 
 > Full mix
 <audio controls>
-  <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav">
+  <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
 </audio>
 
 > Separated sources
-<html>
 
+<html>
   <table>
     <thread>
       <tr>
@@ -65,8 +65,8 @@ All the microphones are used for the separation.
       <tr>
         <th> <strong> Soprano </strong> </th>
         <th>
-          <audio id="player" controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav">
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
           </audio>
         </th>
         <th>Test</th>
@@ -108,7 +108,6 @@ All the microphones are used for the separation.
       </tr>
     </tbody>
   </table>
-
 </html>
 
 ## Separation on full mix without prior information
