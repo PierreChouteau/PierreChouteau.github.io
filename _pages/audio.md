@@ -3,7 +3,6 @@ title: "Audio files"
 layout: single
 permalink: /audio
 author_profile: false
-classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
@@ -36,45 +35,57 @@ All the microphones are used for the separation.
   <table>
     <thread>
       <tr>
-        <th>Voice</th>
-        <th>Original</th>
-        <th>Ref</th>
-        <th>Unet</th>
-        <th>Warmup</th>
-        <th>VA_NN_1</th>
+        <th><center> 
+          <strong> Voice </strong> 
+        </center></th>
+        <th><center> 
+          <strong> Original </strong> 
+        </center></th>
+        <th><center> 
+          <strong> Ref </strong> 
+        </center></th>
+        <th><center> 
+          <strong> Unet </strong> 
+        </center></th>
+        <th><center> 
+          <strong> VA_NN_1 </strong> 
+        </center></th>
+        <th><center> 
+          <strong> Warmup </strong> 
+        </center></th>
       </tr>
     </thread>
     <tbody>
       <tr>
-        <th>Soprano</th>
+        <th> <strong> Soprano </strong> </th>
         <th>Test</th>
         <th>Test</th>
         <th>Test</th>
-        <th>WaTestrmup</th>
+        <th>Test</th>
         <th>Test</th>
       </tr>
       <tr>
-        <th>Alto</th>
+        <th> <strong> Alto </strong> </th>
         <th>Test</th>
         <th>Test</th>
         <th>Test</th>
-        <th>WaTestrmup</th>
+        <th>Test</th>
         <th>Test</th>
       </tr>
       <tr>
-        <th>Tenor</th>
+        <th> <strong> Tenor </strong> </th>
         <th>Test</th>
         <th>Test</th>
         <th>Test</th>
-        <th>WaTestrmup</th>
+        <th>Test</th>
         <th>Test</th>
       </tr>
       <tr>
-        <th>Basse</th>
+        <th> <strong> Basse </strong> </th>
         <th>Test</th>
         <th>Test</th>
         <th>Test</th>
-        <th>WaTestrmup</th>
+        <th>Test</th>
         <th>Test</th>
       </tr>
     </tbody>
