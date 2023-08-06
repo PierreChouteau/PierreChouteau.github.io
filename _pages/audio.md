@@ -7,6 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.6"
 excerpt: "" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
+class: wide
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
@@ -69,10 +70,26 @@ All the microphones are used for the separation.
             <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
           </audio>
         </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Alto </strong> </th>
