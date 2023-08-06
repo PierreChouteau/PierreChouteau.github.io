@@ -3,6 +3,7 @@ title: "Audio files"
 layout: single
 permalink: /audio
 author_profile: false
+classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
@@ -40,20 +41,32 @@ All the microphones are used for the separation.
     </center>
   </div>
   <div id="right-column">
-    content for the right column goes here
+    <!-- content for the right column goes here -->
     <center>
     <strong> Separated </strong>
     </center>
-    <div id="left-column">
+    <div id="left1-column">
       <!-- content for the right column goes here -->
       <center>
       <strong> Model 1 </strong>
       </center>
     </div>
-    <div id="right-column">
+    <div id="left2-column">
       <!-- content for the right column goes here -->
       <center>
       <strong> Model 2 </strong>
+      </center>
+    </div>
+    <div id="right1-column">
+      <!-- content for the right column goes here -->
+      <center>
+      <strong> Model 3 </strong>
+      </center>
+    </div>
+    <div id="right2-column">
+      <!-- content for the right column goes here -->
+      <center>
+      <strong> Model 4 </strong>
       </center>
     </div>
   </div>
