@@ -8,7 +8,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.6"
 #   overlay_image: /images/particles.jpg
-excerpt: "Abstract"
+excerpt: "Stage Télécom Paris - ATIAM"
 ---
 
 ## Introduction
@@ -22,7 +22,8 @@ You can read our report <a href="/images/PAM_SourceSeparation.pdf" target="_blan
 </p>
 </div>
 </html>
-## Abstract
+
+## Résumé
 
 <html>
 <div style="text-align: justify">
@@ -37,7 +38,3 @@ We have compared our results with other state-of-the-art algorithms, obtaining c
 </html>
 
 *Keywords: Music, Source separation, Non-Negative Matrix Factorization, Live Recording, Acoustics*
-
-## Authors
-
-[Pierre Chouteau](mailto:pierre.chouteau@atiam.fr), [Henri Desvallées](mailto:henri.desvallees@atiam.fr), [Louis Lalay](mailto:louis.lalay@atiam.fr), [Mathilde Lefebvre](mailto:mathilde.lefebvre@atiam.fr), [Ivan Meresman-Higgs](mailto:meresmanhiggs@atiam.fr), [Théo Nguyen](mailto:theo.nguyen@atiam.fr)

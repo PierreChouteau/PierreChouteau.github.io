@@ -107,7 +107,7 @@ author:
   name             : "Pierre Chouteau"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ATIAM student"
-  location         : "Telecom, Palaiseau"
+  location         : "Télécom Paris, Palaiseau"
   email            :
   links:
     - label: "Email"

@@ -1,5 +1,5 @@
 ---
-title: "Audio files"
+title: "Exemples Audio"
 layout: single
 permalink: /audio
 author_profile: false
@@ -7,7 +7,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
-excerpt: "Comparison of various separation models" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
+excerpt: "Comparaison de différents modèles de séparation" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
@@ -18,11 +18,11 @@ toc_sticky: true
 </html>
 
 
-# Source separation results
+# Résultats de la séparation de sources - Apprentissage Conjoint
 
 We tried our algorithm in different configurations to evaluate its efficiency. The algorithm takes a multichannel audio with all instrument playing as input, and produces 5 (1 per source) multichannel audios as if the instrument was playing alone in the room. Here we present the most interesting results for the different cases with all audios.
 
-## Technical precision
+## Préçision technique
 The piece is written for a quintet: Violins, Flute, Clarinet and Cello. We used 8 microphones for the recording:
 - 5 *spot* microphones close to each instrument (named after the instrument)
 - 3 linked microphones to capture the global scene (named Left, Center, Right)
@@ -129,9 +129,263 @@ All the microphones are used for the separation.
 
 ## BCBQ
 
-## Mono Training Examples
+> Full mix
+<audio controls>
+  <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+</audio>
 
-## Cantoria Dataset
+> Separated sources
+
+<html>
+  <table>
+    <thread>
+      <tr>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+        <th>
+          <center> Original </center>
+        </th>
+        <th>
+          <center> Ref </center>
+        </th>
+        <th>
+          <center> Unet </center>
+        </th>
+        <th>
+          <center> VA_NN_1 </center>
+        </th>
+        <th>
+          <center> Warmup </center>
+        </th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <th> <strong> Soprano </strong> </th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Alto </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Tenor </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Basse </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Re-synthesized mix </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+    </tbody>
+  </table>
+</html>
+
+# Résultats de l'entrainement sur des audios monophoniques
+
+## Mono -> 2 Sources
+
+<html>
+  <table>
+    <thread>
+      <tr>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+        <th>
+          <center> Ref </center>
+        </th>
+        <th>
+          <center> 1S -> 2S </center>
+        </th>
+        <th>
+          <center> Ref </center>
+        </th>
+        <th>
+          <center> 1S -> 2S </center>
+        </th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <th> <strong> Soprano </strong> </th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Alto </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Tenor </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Basse </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Re-synthesized mix </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+    </tbody>
+  </table>
+</html>
+
+## Mono -> 4 Sources
+
+<html>
+  <table>
+    <thread>
+      <tr>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+        <th>
+          <center> Ref </center>
+        </th>
+        <th>
+          <center> 1S -> 4S </center>
+        </th>
+        <th>
+          <center> Ref </center>
+        </th>
+        <th>
+          <center> 1S -> 4S </center>
+        </th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <th> <strong> Soprano </strong> </th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Alto </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Tenor </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Basse </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Re-synthesized mix </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+    </tbody>
+  </table>
+</html>
+
+# Généralisation sur un autre dataset - Cantoria
 
 ## Separation on full mix without prior information
 
