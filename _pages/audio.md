@@ -30,35 +30,45 @@ All the microphones are used for the separation.
 
 ## Test d'un tableau pour les résultats
 
+> Full mix
+<audio controls>
+  <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav">
+</audio>
+
+> Separated sources
 <html>
 
   <table>
     <thread>
       <tr>
-        <th><center> 
-          <strong> Voice </strong> 
-        </center></th>
-        <th><center> 
-          <strong> Original </strong> 
-        </center></th>
-        <th><center> 
-          <strong> Ref </strong> 
-        </center></th>
-        <th><center> 
-          <strong> Unet </strong> 
-        </center></th>
-        <th><center> 
-          <strong> VA_NN_1 </strong> 
-        </center></th>
-        <th><center> 
-          <strong> Warmup </strong> 
-        </center></th>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+        <th>
+          <center> Original </center>
+        </th>
+        <th>
+          <center> Ref </center>
+        </th>
+        <th>
+          <center> Unet </center>
+        </th>
+        <th>
+          <center> VA_NN_1 </center>
+        </th>
+        <th>
+          <center> Warmup </center>
+        </th>
       </tr>
     </thread>
     <tbody>
       <tr>
         <th> <strong> Soprano </strong> </th>
-        <th>Test</th>
+        <th>
+          <audio id="player" controls="">
+            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav">
+          </audio>
+        </th>
         <th>Test</th>
         <th>Test</th>
         <th>Test</th>
@@ -82,6 +92,14 @@ All the microphones are used for the separation.
       </tr>
       <tr>
         <th> <strong> Basse </strong> </th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th>Test</th>
         <th>Test</th>
         <th>Test</th>
