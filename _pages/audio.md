@@ -6,8 +6,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
-#   overlay_image: /images/particles.jpg
-excerpt: "The recording was carried out in Aubervilliers with musicians from the 'Conservatoire à rayonnement régional'"
+excerpt: "" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
@@ -15,25 +14,8 @@ toc_sticky: true
 ---
 <html>
 
-<!-- <span style="color:red"><b>Warning: Due to authorization issues, we are not able to provide all the audio files yet. </b> </span> -->
-
 </html>
-# Perdrix
 
-<!-- Here say something about mixing -->
-
-
-<!-- Cette pièce a été pensée et écrite lors de son séjour londonien en 2020. On y retrouve des clins d’œil au climat britannique et cette atmosphère tout à fait particulière. Perdrix est divisée en plusieurs périodes qui retracent les étapes d’une journée. En effet, la direction de cette pièce est axée sur le lien entre le temps et la nature. On peut y entendre un instant de contemplation dédié à l’imagination et l’appréciation de la beauté de notre environnement. -->
-
-*Perdrix* is an original composition from Inès Lassègue. This piece was imagined during her stay in London in 2020, and one can grasp some vibes of this british atmosphere. The piece is divided in several parts retracing the moments of the day. Indeed, the piece is based on the interaction between tile and nature. We can hear a moment of contemplation dedicated to the appreciation and the beauty of nature.
-
-> Full mix
-
-<html>
-<audio controls>
-  <source src="/audio/Perdrix.wav">
-</audio>
-</html>
 
 # Source separation results
 
@@ -58,10 +40,22 @@ All the microphones are used for the separation.
     </center>
   </div>
   <div id="right-column">
-    <!-- content for the right column goes here -->
+    <!-- content for the right column goes here
     <center>
     <strong> Separated </strong>
-    </center>
+    </center> -->
+    <div id="right-column">
+      <!-- content for the right column goes here -->
+      <center>
+      <strong> Model 1 </strong>
+      </center>
+    </div>
+    <div id="right-column">
+      <!-- content for the right column goes here -->
+      <center>
+      <strong> Model 2 </strong>
+      </center>
+    </div>
   </div>
 </div>
 
