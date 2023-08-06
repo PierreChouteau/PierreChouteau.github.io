@@ -29,21 +29,55 @@ The piece is written for a quintet: Violins, Flute, Clarinet and Cello. We used 
 
 All the microphones are used for the separation.
 
-## Test d'un tableau pour les résultats
+## Test d'un tableau pour les résultats
 
 <html>
 
   <table>
     <thread>
-      <td>
+      <tr>
         <th>Voice</th>
         <th>Original</th>
         <th>Ref</th>
         <th>Unet</th>
         <th>Warmup</th>
         <th>VA_NN_1</th>
-      </td>
+      </tr>
     </thread>
+    <tbody>
+      <tr>
+        <th>Soprano</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>WaTestrmup</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th>Alto</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>WaTestrmup</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th>Tenor</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>WaTestrmup</th>
+        <th>Test</th>
+      </tr>
+      <tr>
+        <th>Basse</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>Test</th>
+        <th>WaTestrmup</th>
+        <th>Test</th>
+      </tr>
+    </tbody>
   </table>
 
 </html>
