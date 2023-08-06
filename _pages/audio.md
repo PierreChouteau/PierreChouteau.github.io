@@ -29,6 +29,25 @@ The piece is written for a quintet: Violins, Flute, Clarinet and Cello. We used 
 
 All the microphones are used for the separation.
 
+## Test d'un tableau pour les résultats
+
+<html>
+
+  <table>
+    <thread>
+      <td>
+        <th>Voice</th>
+        <th>Original</th>
+        <th>Ref</th>
+        <th>Unet</th>
+        <th>Warmup</th>
+        <th>VA_NN_1</th>
+      </td>
+    </thread>
+  </table>
+
+</html>
+
 ## Separation on full mix without prior information
 
 <html>
@@ -45,22 +64,6 @@ All the microphones are used for the separation.
     <center>
     <strong> Separated </strong>
     </center>
-    <div id="left1-column">
-      <!-- content for the right column goes here -->
-      <strong> Model 1 </strong>
-    </div>
-    <div id="left2-column">
-      <!-- content for the right column goes here -->
-      <strong> Model 2 </strong>
-    </div>
-    <div id="right1-column">
-      <!-- content for the right column goes here -->
-      <strong> Model 3 </strong>
-    </div>
-    <div id="right2-column">
-      <!-- content for the right column goes here -->
-      <strong> Model 4 </strong>
-    </div>
   </div>
 </div>
 
