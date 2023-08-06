@@ -3,15 +3,15 @@ title: "Audio files"
 layout: single
 permalink: /audio
 author_profile: false
+class: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
 excerpt: "" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
-class: wide
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "cog"
-toc_sticky: true
+# toc: true
+# toc_label: "Table of Contents"
+# toc_icon: "cog"
+# toc_sticky: true
 ---
 <html>
 
