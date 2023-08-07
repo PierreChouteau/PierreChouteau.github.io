@@ -183,7 +183,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th></th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_b.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984.wav"/>
           </audio>
         </th>
         <th></th>
