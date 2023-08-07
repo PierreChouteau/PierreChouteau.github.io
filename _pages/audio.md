@@ -227,7 +227,7 @@ All the microphones are used for the separation.
 
 # Résultats de l'entrainement sur des audios monophoniques
 
-## Mono $\rightarrow$ 2 Sources
+## Mono &rarr; 2 Sources
 
 <html>
   <table>
@@ -240,13 +240,13 @@ All the microphones are used for the separation.
           <center> Ref </center>
         </th>
         <th>
-          <center> 1S $\rightarrow$ 2S </center>
+          <center> 1S &rarr; 2S </center>
         </th>
         <th>
           <center> Ref </center>
         </th>
         <th>
-          <center> 1S $\rightarrow$ 2S </center>
+          <center> 1S &rarr; 2S </center>
         </th>
       </tr>
     </thread>
@@ -306,7 +306,7 @@ All the microphones are used for the separation.
   </table>
 </html>
 
-## Mono $\rightarrow$ 4 Sources
+## Mono &rarr; 4 Sources
 
 <html>
   <table>
@@ -319,13 +319,13 @@ All the microphones are used for the separation.
           <center> Ref </center>
         </th>
         <th>
-          <center> 1S $\rightarrow$ 4S </center>
+          <center> 1S &rarr; 4S </center>
         </th>
         <th>
           <center> Ref </center>
         </th>
         <th>
-          <center> 1S $\rightarrow$ 4S </center>
+          <center> 1S &rarr; 4S </center>
         </th>
       </tr>
     </thread>
