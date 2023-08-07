@@ -23,21 +23,24 @@ toc_sticky: true
 We tried our algorithm in different configurations to evaluate its efficiency. The algorithm takes a multichannel audio with all instrument playing as input, and produces 5 (1 per source) multichannel audios as if the instrument was playing alone in the room. Here we present the most interesting results for the different cases with all audios.
 
 ## Préçision technique
-The piece is written for a quintet: Violins, Flute, Clarinet and Cello. We used 8 microphones for the recording:
-- 5 *spot* microphones close to each instrument (named after the instrument)
-- 3 linked microphones to capture the global scene (named Left, Center, Right)
 
-All the microphones are used for the separation.
+Nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. Nous présentons ici les deux méthodes les plus intéressantes.
+- VA_NN_1: Cette méthode consiste à entrainer le modèle de séparation en bloquant la partie __estimation de fréquences fondamentales__.  <!-- Expliquer plus que ça -->
+- Warmup: Cette méthode consiste à entrainer le modèle de séparation en échauffement les différente partie séparément puis en poursuivant l'entrainement globale par la suite. <!-- Expliquer plus que ça -->
+
+Nous comparons nos résultats au [modèle de référence](https://github.com/schufo/umss) que nous avons modifié, et à l'architecture [Unet](https://program.ismir2020.net/poster_5-14.html) de Petermann et al.
 
 ## BC1song
 
-> Full mix
+Pour ces résultas, nous avons entrainé les différents modèles sur la base de données __BC1Song__, et évalué sur la base de données __ChoralSingingDataset__.
+
+> Exemple de mélange audio
 <audio controls>
   <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
 </audio>
 
-> Separated sources
 
+> Voix séparées
 <html>
   <table>
     <thread>
@@ -129,13 +132,15 @@ All the microphones are used for the separation.
 
 ## BCBQ
 
-> Full mix
+Pour ces résultas, nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __ChoralSingingDataset__.
+
+> Exemple de mélange audio
 <audio controls>
   <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
 </audio>
 
-> Separated sources
 
+> Voix séparées
 <html>
   <table>
     <thread>
