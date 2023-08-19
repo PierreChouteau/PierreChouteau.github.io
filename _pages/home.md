@@ -8,7 +8,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.6"
 #   overlay_image: /images/particles.jpg
-excerpt: "Stage Télécom Paris - ATIAM"
+excerpt: "Stage réalisé dans le cadre du Master ATIAM à Télécom Paris"
 ---
 
 ## Introduction
