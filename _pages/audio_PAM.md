@@ -1,7 +1,7 @@
 ---
 title: "Audio files"
 layout: single
-permalink: /audio
+permalink: /audio_PAM
 author_profile: false
 header:
   overlay_color: "#000"
