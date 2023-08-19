@@ -1,6 +1,4 @@
 # main links
 main:
-  - title: "Photos"
-    url: /photo
-  - title: "Audio files"
+  - title: "Examples Audio"
     url: /audio
