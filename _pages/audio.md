@@ -52,7 +52,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
           <center> Original </center>
         </th>
         <th>
-          <center> Ref </center>
+          <center> US </center>
         </th>
         <th>
           <center> Unet </center>
@@ -224,7 +224,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
           <center> Original </center>
         </th>
         <th>
-          <center> Ref </center>
+          <center> US </center>
         </th>
         <th>
           <center> Unet </center>
@@ -314,13 +314,13 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
           <!-- <center> Voice </center> -->
         </th>
         <th>
-          <center> Ref </center>
+          <center> US </center>
         </th>
         <th>
           <center> 1S &rarr; 2S </center>
         </th>
         <th>
-          <center> Ref </center>
+          <center> US </center>
         </th>
         <th>
           <center> 1S &rarr; 2S </center>
@@ -393,13 +393,13 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
           <!-- <center> Voice </center> -->
         </th>
         <th>
-          <center> Ref </center>
+          <center> US </center>
         </th>
         <th>
           <center> 1S &rarr; 4S </center>
         </th>
         <th>
-          <center> Ref </center>
+          <center> US </center>
         </th>
         <th>
           <center> 1S &rarr; 4S </center>
