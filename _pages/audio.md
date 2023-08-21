@@ -20,15 +20,14 @@ toc_sticky: true
 
 # Résultats de la séparation de sources - Apprentissage Conjoint
 
-We tried our algorithm in different configurations to evaluate its efficiency. The algorithm takes a multichannel audio with all instrument playing as input, and produces 5 (1 per source) multichannel audios as if the instrument was playing alone in the room. Here we present the most interesting results for the different cases with all audios.
 
 ## Préçision technique
 
 Nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. Nous présentons ici les deux méthodes les plus intéressantes.
 - VA_NN_1: Cette méthode consiste à entrainer le modèle de séparation en bloquant la partie __estimation de fréquences fondamentales__.  <!-- Expliquer plus que ça -->
-- Warmup: Cette méthode consiste à entrainer le modèle de séparation en échauffement les différente partie séparément puis en poursuivant l'entrainement globale par la suite. <!-- Expliquer plus que ça -->
+- Warmup: Cette méthode consiste à entrainer le modèle de séparation en échauffant les différente partie séparément puis en poursuivant l'entrainement globale par la suite. <!-- Expliquer plus que ça -->
 
-Nous comparons nos résultats au [modèle de référence](https://github.com/schufo/umss) que nous avons modifié, et à l'architecture [Unet](https://program.ismir2020.net/poster_5-14.html) de Petermann et al.
+Nous comparons nos résultats au [modèle de référence](https://github.com/schufo/umss) (*US*) que nous avons modifié, et à l'architecture [*U-Net*](https://program.ismir2020.net/poster_5-14.html) de Petermann et al.
 
 ## BC1song
 
@@ -36,7 +35,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 > Exemple de mélange audio
 <audio controls>
-  <source src="/audio/Apprentissage_Conjoint/Melange/melange_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984.wav"/>
+  <source src="/audio/Apprentissage_Conjoint/Melange/melange_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
 
@@ -70,27 +69,27 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th> <strong> Soprano </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_s.wav" type="audio/wav">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav" type="audio/wav">
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_s.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_s.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_s.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_s.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
       </tr>
@@ -98,27 +97,27 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th> <strong> Alto </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_a.wav" type="audio/wav">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav" type="audio/wav">
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_a.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_a.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_a.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_a.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
           </audio>
         </th>
       </tr>
@@ -126,27 +125,27 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th> <strong> Tenor </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_t.wav" type="audio/wav">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav" type="audio/wav">
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_t.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_t.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_t.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_t.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
           </audio>
         </th>
       </tr>
@@ -154,27 +153,27 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th> <strong> Basse </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_b.wav" type="audio/wav">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav" type="audio/wav">
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_b.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_b.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_b.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984_voice_b.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
           </audio>
         </th>
       </tr>
@@ -183,18 +182,18 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th></th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/Ref_sources/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
           </audio>
         </th>
         <th></th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/VA_NN_1/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BC1song/W_UP/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
           </audio>
         </th>
       </tr>
@@ -208,7 +207,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 > Exemple de mélange audio
 <audio controls>
-  <source src="/audio/Apprentissage_Conjoint/Melange/melange_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_7.984.wav"/>
+  <source src="/audio/Apprentissage_Conjoint/Melange/melange_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
 
@@ -242,61 +241,133 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th> <strong> Soprano </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav" type="audio/wav">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav" type="audio/wav">
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
       </tr>
-      <tr>
+     <tr>
         <th> <strong> Alto </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Tenor </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Basse </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Ref_sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Unet_Sources/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/W_UP/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Re-synthesized mix </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th></th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/Ref_sources/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th></th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_1/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/W_UP/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
       </tr>
     </tbody>
   </table>
@@ -319,65 +390,47 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th>
           <center> 1S &rarr; 2S </center>
         </th>
-        <th>
-          <center> US </center>
-        </th>
-        <th>
-          <center> 1S &rarr; 2S </center>
-        </th>
       </tr>
     </thread>
     <tbody>
       <tr>
-        <th> <strong> Soprano </strong> </th>
-        <th>
-          <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav" type="audio/wav">
-          </audio>
-        </th>
-        <th>
-          <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
-          </audio>
-        </th>
-        <th>
-          <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
-          </audio>
-        </th>
-        <th>
-          <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
-          </audio>
-        </th>
-      </tr>
-      <tr>
         <th> <strong> Alto </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_At_2-06_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_At_2-06_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
-        <th> <strong> Tenor </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-      </tr>
-      <tr>
-        <th> <strong> Basse </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th> <strong> Bass </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_At_2-06_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_At_2-06_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Re-synthesized mix </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/mix_reconstruct_el_rossinyol_At_2-06_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/mix_reconstruct_el_rossinyol_At_2-06_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
       </tr>
     </tbody>
   </table>
@@ -398,12 +451,6 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th>
           <center> 1S &rarr; 4S </center>
         </th>
-        <th>
-          <center> US </center>
-        </th>
-        <th>
-          <center> 1S &rarr; 4S </center>
-        </th>
       </tr>
     </thread>
     <tbody>
@@ -411,52 +458,66 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         <th> <strong> Soprano </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav" type="audio/wav">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_4s_satb_bcbq_mf0_1_again/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav" type="audio/wav">
           </audio>
         </th>
         <th>
           <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
-          </audio>
-        </th>
-        <th>
-          <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
-          </audio>
-        </th>
-        <th>
-          <audio controls="">
-            <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav"/>
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_s.wav"/>
           </audio>
         </th>
       </tr>
       <tr>
         <th> <strong> Alto </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_4s_satb_bcbq_mf0_1_again/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Tenor </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_4s_satb_bcbq_mf0_1_again/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Basse </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_4s_satb_bcbq_mf0_1_again/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
       </tr>
       <tr>
         <th> <strong> Re-synthesized mix </strong> </th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
-        <th>Test</th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_4s_satb_bcbq_mf0_1_again/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_1s_bcbq_crepe_10_epo/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
       </tr>
     </tbody>
   </table>
@@ -464,128 +525,3 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 # Généralisation sur un autre dataset - Cantoria
 
-## Separation on full mix without prior information
-
-<html>
-
-<div id="container">
-  <div id="left-column">
-    <!-- content for the left column goes here -->
-    <center>
-    <strong> Original </strong>
-    </center>
-  </div>
-  <div id="right-column">
-    <!-- content for the right column goes here -->
-    <center>
-    <strong> Separated </strong>
-    </center>
-  </div>
-</div>
-
-</html>
-
-> Violin 1
-
-<html>
-
-<div id="container">
-  <div id="left-column">
-    <!-- content for the left column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/no_separation/micro_Violin1.wav">
-    </audio>
-  </div>
-  <div id="right-column">
-    <!-- content for the right column goes here -->
-    <audio controls>
-  <source src="/audio/no_effect_audios/separation/micro_Violin1/source_3_micro_Violin1_audio_length_12_n_basis_32_n_fft_4096.wav">
-    </audio>
-  </div>
-</div>
-
-</html>
-
-> Violin 2
-
-<html>
-
-<div id="container">
-  <div id="left-column">
-    <!-- content for the left column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/no_separation/micro_Violin2.wav">
-    </audio>
-  </div>
-  <div id="right-column">
-    <!-- content for the right column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/separation/micro_Violin2/source_4_micro_Violin2_audio_length_12_n_basis_32_n_fft_4096.wav">
-    </audio>
-  </div>
-</div>
-
-</html>
-
-> Flute
-
-<html>
-
-<div id="container">
-  <div id="left-column">
-    <!-- content for the left column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/no_separation/micro_Flute.wav">
-    </audio>
-  </div>
-  <div id="right-column">
-    <!-- content for the right column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/separation/micro_Flute/source_0_micro_Flute_audio_length_12_n_basis_32_n_fft_4096.wav">
-    </audio>
-  </div>
-</div>
-
-</html>
-
-> Clarinet
-
-<html>
-
-<div id="container">
-  <div id="left-column">
-    <!-- content for the left column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/no_separation/micro_Clarinet.wav">
-    </audio>
-  </div>
-  <div id="right-column">
-    <!-- content for the right column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/separation/micro_Clarinet/source_1_micro_Clarinet_audio_length_12_n_basis_32_n_fft_4096.wav">
-    </audio>
-  </div>
-</div>
-
-</html>
-
-> Cello
-
-<html>
-
-<div id="container">
-  <div id="left-column">
-    <!-- content for the left column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/no_separation/micro_Cello.wav">
-    </audio>
-  </div>
-  <div id="right-column">
-    <!-- content for the right column goes here -->
-    <audio controls>
-      <source src="/audio/no_effect_audios/separation/micro_Cello/source_2_micro_Cello_audio_length_12_n_basis_32_n_fft_4096.wav">
-    </audio>
-  </div>
-</div>
-
-</html>
