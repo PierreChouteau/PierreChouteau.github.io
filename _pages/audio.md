@@ -39,7 +39,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 </audio>
 
 
-> Voix séparées
+> Voix séparées issues du filtrage de Wiener
 <html>
   <table>
     <thread>
@@ -212,7 +212,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 </audio>
 
 
-> Voix séparées
+> Voix séparées issues du filtrage de Wiener
 <html>
   <table>
     <thread>
@@ -382,12 +382,12 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
 
 ## Mono &rarr; 2 Sources
 
-> Exemple de mélange audio
+> Exemple de mélange audio - Alto / Basse
 <audio controls>
   <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_At_2-06_Bos_207_27.984.wav"/>
 </audio>
 
-> Voix séparées
+> Voix séparées issues du filtrage de Wiener
 <html>
   <table>
     <thread>
@@ -448,6 +448,142 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
 </html>
 <br/>
 
+---
+
+> Exemple de mélange audio - Soprano / Alto
+<audio controls>
+  <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_Sno_208_At_2-06_27.984.wav"/>
+</audio>
+
+> Voix séparées issues du filtrage de Wiener
+<html>
+  <table>
+    <thread>
+      <tr>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+        <th>
+          <center>US<sub>2s</sub></center>
+        </th>
+        <th>
+          <center> 1S &rarr; 2S </center>
+        </th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <th> <strong> Soprano </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_27.984_voice_s.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_27.984_voice_s.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Alto </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_27.984.wav"/>
+          </audio>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</html>
+<br/>
+
+--- 
+
+> Exemple de mélange audio - Tenor / Basse
+<audio controls>
+  <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_Tor2-09_Bos_207_27.984.wav"/>
+</audio>
+
+> Voix séparées issues du filtrage de Wiener
+<html>
+  <table>
+    <thread>
+      <tr>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+        <th>
+          <center>US<sub>2s</sub></center>
+        </th>
+        <th>
+          <center> 1S &rarr; 2S </center>
+        </th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <th> <strong> Tenor </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Basse </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/sources_estimates_masking_el_rossinyol_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/mix_reconstruct_el_rossinyol_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_1s_bcbq_crepe_10_epo/mix_reconstruct_el_rossinyol_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</html>
+<br/>
+
 ## Mono &rarr; 4 Sources
 
 > Exemple de mélange audio
@@ -455,7 +591,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
   <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
-> Voix séparées
+> Voix séparées issues du filtrage de Wiener
 <html>
   <table>
     <thread>
@@ -557,7 +693,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
 </audio>
 
 
-> Voix séparées
+> Voix séparées issues du filtrage de Wiener
 <html>
   <table>
     <thread>
