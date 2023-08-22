@@ -200,6 +200,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
     </tbody>
   </table>
 </html>
+<br/>
 
 ## BCBQ
 
@@ -372,7 +373,9 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
     </tbody>
   </table>
 </html>
+<br/><br/>
 
+--- 
 # Résultats de l'entrainement sur des audios monophoniques
 
 Ces résultats correspondent à l'entrainement du modèle de séparation sur des audios monophoniques. Nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __ChoralSingingDataset__.
@@ -444,6 +447,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
     </tbody>
   </table>
 </html>
+<br/>
 
 ## Mono &rarr; 4 Sources
 
@@ -537,6 +541,9 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
     </tbody>
   </table>
 </html>
+
+<br/>
+<br/>
 
 # Généralisation sur un autre dataset - Cantoria
 
@@ -666,6 +673,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
       </tr>
       <tr>
         <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th></th>
         <th>
           <audio controls="">
             <source src="/audio/cantoria/BCBSQ/US/mix_reconstruct_CEA_satb_15.984.wav"/>
