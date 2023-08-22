@@ -397,7 +397,12 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
-          <center> US </center>
+          <center> 
+            <msub>
+              <mi>US</mi>
+              <mn>2s</mn>
+            </msub>
+          </center>
         </th>
         <th>
           <center> 1S &rarr; 2S </center>
@@ -465,7 +470,12 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
-          <center> US </center>
+          <center> 
+            <msub>
+              <mi>US</mi>
+              <mn>4s</mn>
+            </msub>
+          </center>
         </th>
         <th>
           <center> 1S &rarr; 4S </center>
@@ -545,6 +555,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
 <br/>
 <br/>
 
+---
 # Généralisation sur un autre dataset - Cantoria
 
 Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __Cantoria__.
