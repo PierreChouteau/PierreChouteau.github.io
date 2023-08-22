@@ -397,12 +397,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
-          <center> 
-            <msub>
-              <mi>US</mi>
-              <mn>2s</mn>
-            </msub>
-          </center>
+          <center>US<sub>2s</sub></center>
         </th>
         <th>
           <center> 1S &rarr; 2S </center>
@@ -470,11 +465,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
-          <center> 
-            <msub>
-              <mi>US</mi>
-              <mn>4s</mn>
-            </msub>
+          <center> US<sub>4s</sub>
           </center>
         </th>
         <th>
