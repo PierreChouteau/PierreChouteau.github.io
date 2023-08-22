@@ -396,6 +396,9 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
+          <center>Original</center>
+        </th>
+        <th>
           <center>US<sub>2s</sub></center>
         </th>
         <th>
@@ -408,6 +411,11 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
         <th> <strong> Alto </strong> </th>
         <th>
           <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_At_2-06_Bos_207_27.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_At_2-06_Bos_207_27.984_voice_a.wav"/>
           </audio>
         </th>
@@ -418,7 +426,12 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
         </th>
       </tr>
       <tr>
-        <th> <strong> Bass </strong> </th>
+        <th> <strong> Basse </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_At_2-06_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_At_2-06_Bos_207_27.984_voice_b.wav"/>
@@ -464,6 +477,9 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
+          <center>Original</center>
+        </th>
+        <th>
           <center>US<sub>2s</sub></center>
         </th>
         <th>
@@ -474,6 +490,11 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
     <tbody>
       <tr>
         <th> <strong> Soprano </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_Sno_208_At_2-06_27.984_voice_s.wav"/>
+          </audio>
+        </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_27.984_voice_s.wav"/>
@@ -487,6 +508,11 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
       </tr>
       <tr>
         <th> <strong> Alto </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_Sno_208_At_2-06_27.984_voice_a.wav"/>
+          </audio>
+        </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Sno_208_At_2-06_27.984_voice_a.wav"/>
@@ -532,6 +558,9 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
           <!-- <center> Voice </center> -->
         </th>
         <th>
+          <center>Original</center>
+        </th>
+        <th>
           <center>US<sub>2s</sub></center>
         </th>
         <th>
@@ -542,6 +571,11 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
     <tbody>
       <tr>
         <th> <strong> Tenor </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_Tor2-09_Bos_207_27.984_voice_t.wav"/>
+          </audio>
+        </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Tor2-09_Bos_207_27.984_voice_t.wav"/>
@@ -555,6 +589,11 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
       </tr>
       <tr>
         <th> <strong> Basse </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_Tor2-09_Bos_207_27.984_voice_b.wav"/>
+          </audio>
+        </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/sources_estimates_masking_el_rossinyol_Tor2-09_Bos_207_27.984_voice_b.wav"/>
