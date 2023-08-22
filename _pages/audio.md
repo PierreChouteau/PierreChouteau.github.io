@@ -24,7 +24,7 @@ toc_sticky: true
 ## Préçision technique
 
 Nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. Nous présentons ici les deux méthodes les plus intéressantes.
-- VA_NN_1: Cette méthode consiste à entrainer le modèle de séparation en bloquant la partie __estimation de fréquences fondamentales__.  <!-- Expliquer plus que ça -->
+- VA_NN_2: Cette méthode consiste à entrainer le modèle de séparation en bloquant la partie __estimation de fréquences fondamentales__.  <!-- Expliquer plus que ça -->
 - Warmup: Cette méthode consiste à entrainer le modèle de séparation en échauffant les différente partie séparément puis en poursuivant l'entrainement globale par la suite. <!-- Expliquer plus que ça -->
 
 Nous comparons nos résultats au [modèle de référence](https://github.com/schufo/umss) (*US*) que nous avons modifié, et à l'architecture [*U-Net*](https://program.ismir2020.net/poster_5-14.html) de Petermann et al.
@@ -57,7 +57,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
           <center> Unet </center>
         </th>
         <th>
-          <center> VA_NN_1 </center>
+          <center> VA_NN_2 </center>
         </th>
         <th>
           <center> Warmup </center>
@@ -230,7 +230,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
           <center> Unet </center>
         </th>
         <th>
-          <center> VA_NN_1 </center>
+          <center> VA_NN_2 </center>
         </th>
         <th>
           <center> Warmup </center>
@@ -388,7 +388,6 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
 </audio>
 
 > Voix séparées
-
 <html>
   <table>
     <thread>
@@ -547,7 +546,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
 <br/>
 
 ---
-# Généralisation sur un autre dataset - Cantoria
+# Généralisation sur un autre base de données - Cantoria
 
 Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __Cantoria__.
 
