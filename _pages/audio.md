@@ -3,7 +3,7 @@ title: "Exemples Audio"
 layout: single
 permalink: /audio
 author_profile: false
-# classes: wide
+classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
@@ -21,7 +21,7 @@ toc_sticky: true
 # Résultats de la séparation de sources - Apprentissage Conjoint
 
 
-## Préçision technique
+## Précision technique
 
 Nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. Nous présentons ici les deux méthodes les plus intéressantes.
 - VA_NN_2: Cette méthode consiste à entrainer le modèle de séparation en bloquant la partie __estimation de fréquences fondamentales__.  <!-- Expliquer plus que ça -->
