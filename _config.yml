@@ -291,3 +291,15 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+  # _pages
+  - scope:
+      path: "_pages/audio"
+      type: page
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: # true
+      share: true
+      related: true

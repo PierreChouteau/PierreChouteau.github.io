@@ -3,7 +3,7 @@ title: "Exemples Audio"
 layout: single
 permalink: /audio
 author_profile: false
-classes: wide
+# classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
