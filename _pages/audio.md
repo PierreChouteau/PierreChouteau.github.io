@@ -35,7 +35,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 > Exemple de mélange audio
 <audio controls>
-  <source src="/audio/Apprentissage_Conjoint/Melange/melange_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+  <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
 
@@ -178,7 +178,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         </th>
       </tr>
       <tr>
-        <th> <strong> Re-synthesized mix </strong> </th>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -207,7 +207,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 > Exemple de mélange audio
 <audio controls>
-  <source src="/audio/Apprentissage_Conjoint/Melange/melange_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+  <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
 
@@ -350,7 +350,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         </th>
       </tr>
       <tr>
-        <th> <strong> Re-synthesized mix </strong> </th>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -375,7 +375,16 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 # Résultats de l'entrainement sur des audios monophoniques
 
+Ces résultats correspondent à l'entrainement du modèle de séparation sur des audios monophoniques. Nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __ChoralSingingDataset__.
+
 ## Mono &rarr; 2 Sources
+
+> Exemple de mélange audio
+<audio controls>
+  <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_At_2-06_Bos_207_27.984.wav"/>
+</audio>
+
+> Voix séparées
 
 <html>
   <table>
@@ -420,7 +429,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         </th>
       </tr>
       <tr>
-        <th> <strong> Re-synthesized mix </strong> </th>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/unsupervised_2s_satb_bcbq_mf0_1/mix_reconstruct_el_rossinyol_At_2-06_Bos_207_27.984.wav"/>
@@ -438,6 +447,12 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 ## Mono &rarr; 4 Sources
 
+> Exemple de mélange audio
+<audio controls>
+  <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+</audio>
+
+> Voix séparées
 <html>
   <table>
     <thread>
@@ -507,7 +522,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
         </th>
       </tr>
       <tr>
-        <th> <strong> Re-synthesized mix </strong> </th>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_4sources/unsupervised_4s_satb_bcbq_mf0_1_again/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
@@ -525,3 +540,144 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 # Généralisation sur un autre dataset - Cantoria
 
+Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __Cantoria__.
+
+
+> Exemple de mélange audio
+<audio controls="">
+  <source src="/audio/cantoria/mix/mix_CEA_satb_15.984.wav"/>
+</audio>
+
+
+> Voix séparées
+<html>
+  <table>
+    <thread>
+      <tr>
+        <th>
+          <!-- <center> Voice </center> -->
+        </th>
+         <th>
+          <center> Original </center>
+        </th>
+        <th>
+          <center> US </center>
+        </th>
+        <th>
+          <center> Unet </center>
+        </th>
+        <th>
+          <center> W-Up </center>
+        </th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <th> <strong> Soprano </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/target_sources/target_sources_CEA_satb_15.984_voice_s.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio class="px-1" controls="" controlslist="nodownload">
+            <source src="/audio/cantoria/BCBSQ/US/sources_estimates_masking_CEA_satb_15.984_voice_s.wav" type="audio/wav">
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/Unet/sources_estimates_masking_CEA_satb_15.984_voice_s.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/W-Up/sources_estimates_masking_CEA_satb_15.984_voice_s.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Alto </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/target_sources/target_sources_CEA_satb_15.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/US/sources_estimates_masking_CEA_satb_15.984_voice_a.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/Unet/sources_estimates_masking_CEA_satb_15.984_voice_a.wav"/>
+          </audio>
+        </th>
+         <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/W-Up/sources_estimates_masking_CEA_satb_15.984_voice_a.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Tenor </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/target_sources/target_sources_CEA_satb_15.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/US/sources_estimates_masking_CEA_satb_15.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/Unet/sources_estimates_masking_CEA_satb_15.984_voice_t.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/W-Up/sources_estimates_masking_CEA_satb_15.984_voice_t.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Basse </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/target_sources/target_sources_CEA_satb_15.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/US/sources_estimates_masking_CEA_satb_15.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/Unet/sources_estimates_masking_CEA_satb_15.984_voice_b.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/W-Up/sources_estimates_masking_CEA_satb_15.984_voice_b.wav"/>
+          </audio>
+        </th>
+      </tr>
+      <tr>
+        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/US/mix_reconstruct_CEA_satb_15.984.wav"/>
+          </audio>
+        </th>
+        <th></th>
+        <th>
+          <audio controls="">
+            <source src="/audio/cantoria/BCBSQ/W-Up/mix_reconstruct_CEA_satb_15.984.wav"/>
+          </audio>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</html>
