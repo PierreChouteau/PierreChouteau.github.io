@@ -18,16 +18,26 @@ toc_sticky: true
 </html>
 
 
+<!-- Pour ce projet, nous avons proposé un modèle d'apprentissage profond non supervisé pour de la séparation de sources musicales. Celui-ci est basé sur le modèle de séparation de sources __US__ de [Schulze-Foster et al.](https://ieeexplore.ieee.org/document/10058592), mais contrairement à ce dernier, il n'utilise aucune connaissance *a priori* sur les fréquences fondamentales des sources.
+
+Notre approche se base sur des modèles pré-entrainés, pour intégrer l'estimation des fréquences fondamentales à l'intérieur du modèle __US__, et nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. 
+
+Nous présentons ici les résultats des deux méthodes les plus intéressantes : 
+- VA_NN_2
+- Warmup
+
+Les détails d'implémentation et de fonctionnement sont disponible dans le __rapport__.
+
+
+Nous comparons nos résultats au modèle __US__ de Schulze-Foster et al., et à l'architecture [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann et al. -->
+
+
+Bienvenue sur la page des exemples audio. Vous trouverez ici les résultats de nos expériences, ainsi que des exemples audio de séparation de sources musicales.
+
+Pour les expériences où notre architecture est comparée aux modèles __US__ et __U-Net__, nous ne montrons que nos deux meilleurs approches: __VA_NN_2__ et __Warmup__.
+
+
 # Résultats de la séparation de sources - Apprentissage Conjoint
-
-
-## Précision technique
-
-Nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. Nous présentons ici les deux méthodes les plus intéressantes.
-- VA_NN_2: Cette méthode consiste à entrainer le modèle de séparation en bloquant la partie __estimation de fréquences fondamentales__.  <!-- Expliquer plus que ça -->
-- Warmup: Cette méthode consiste à entrainer le modèle de séparation en échauffant les différente partie séparément puis en poursuivant l'entrainement globale par la suite. <!-- Expliquer plus que ça -->
-
-Nous comparons nos résultats au [modèle de référence](https://github.com/schufo/umss) (*US*) que nous avons modifié, et à l'architecture [*U-Net*](https://program.ismir2020.net/poster_5-14.html) de Petermann et al.
 
 ## BC1song
 
@@ -202,9 +212,9 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 </html>
 <br/>
 
-## BCBQ
+## BCBSQ
 
-Pour ces résultas, nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __ChoralSingingDataset__.
+Pour ces résultas, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __ChoralSingingDataset__.
 
 > Exemple de mélange audio
 <audio controls>
@@ -749,7 +759,7 @@ Ces résultats correspondent à l'entrainement du modèle de séparation sur des
 ---
 # Généralisation sur un autre base de données - Cantoria
 
-Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __Cantoria__.
+Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __Cantoria__.
 
 
 > Exemple de mélange audio

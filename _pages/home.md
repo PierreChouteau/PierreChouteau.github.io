@@ -11,7 +11,7 @@ header:
 excerpt: "Stage réalisé dans le cadre du Master ATIAM à Télécom Paris"
 ---
 
-## Introduction
+# Introduction
 <html>
 <div style="text-align: justify">
 <p>
@@ -19,12 +19,12 @@ Ce projet est le résultat d'un stage de recherche de 6 mois effectué au labora
 </p>
 
 <p>
-L'objectif du projet est de séparer les 4 voix : Soprano, Alto, Ténor et Basse d'un enregistrement de chant choral. Cette technique est appelée Séparation de Sources, et dans notre cas, elle est réalisée à partir de modèle d'apprentissage profond non supervisé. C'est-à-dire, qu'il n'y a pas besoin des sources isolées pour l'entrainement.
+L'objectif du projet est de séparer les 4 voix : Soprano, Alto, Ténor et Basse d'un enregistrement de chant choral. Cette technique est appelée Séparation de Sources, et dans notre cas, elle est réalisée à partir de modèles d'apprentissage profond non supervisé. C'est-à-dire, qu'il n'y a pas besoin des sources isolées pour l'entrainement.
 </p>
 </div>
 </html>
 
-## Résumé
+# Résumé
 
 <html>
 <div style="text-align: justify">
