@@ -7,7 +7,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
-excerpt: "Comparaison de différents modèles de séparation" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
+excerpt: "Résultats d'expériences" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
