@@ -34,10 +34,12 @@ Nous comparons nos résultats au modèle __US__ de Schulze-Foster et al., et à 
 
 Bienvenue sur la page des exemples audio. Vous trouverez ici les résultats de nos expériences, ainsi que des exemples audio de séparation de sources musicales.
 
-Pour les expériences où notre architecture est comparée aux modèles [__US__](https://ieeexplore.ieee.org/document/10058592) de Schulze-Foster et al. et [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann et al., nous ne montrons que nos deux meilleurs approches: 
+Pour les expériences où notre architecture est comparée au modèle [__US__](https://ieeexplore.ieee.org/document/10058592) de Schulze-Foster _et al._ et [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann _et al._, nous ne montrons que nos deux meilleurs approches : 
 - __VA_NN_2__
-- __Warmup__.
+- __Warmup__
 
+
+Tous les audios présentés sont issus des bases de données d'évaluation: __ChoralSingingDataset__ ou __Cantoria__.
 
 
 <br/>
