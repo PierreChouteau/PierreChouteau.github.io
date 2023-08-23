@@ -396,7 +396,10 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 --- 
 # Résultats de l'entrainement sur des audios monophoniques
 
-Ces résultats correspondent à l'entrainement du modèle de séparation sur des audios monophoniques. Nous avons entrainé les différents modèles sur la base de données __BCBQ__, et évalué sur la base de données __ChoralSingingDataset__.
+Ces résultats correspondent à l'évaluation du modèle __US__ de Schulze-Foster _et al._ entraîné, à partir d'audios monophoniques, à séparer des audios comportant 2 sources (1S &rarr; 2S) et 4 sources (1S &rarr; 4S).  
+US<sub>2s</sub> / US<sub>4s</sub> : Modèles de référence entraînés et évalués sur le même nombre de sources (resp. 2s/4s),
+
+Nous avons entrainé les différents modèles sur la base de données __BCSBQ__, et évalué sur la base de données __ChoralSingingDataset__.
 
 ## Mono &rarr; 2 Sources
 
