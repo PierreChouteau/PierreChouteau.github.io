@@ -34,12 +34,12 @@ Nous comparons nos résultats au modèle __US__ de Schulze-Foster et al., et à 
 
 Bienvenue sur la page des exemples audio. Vous trouverez ici les résultats de nos expériences, ainsi que des exemples audio de séparation de sources musicales.
 
-Pour les expériences où notre architecture est comparée au modèle [__US__](https://ieeexplore.ieee.org/document/10058592) de Schulze-Foster _et al._ et [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann _et al._, nous ne montrons que nos deux meilleurs approches : 
+Pour les expériences où notre architecture est comparée au modèle [__US__](https://ieeexplore.ieee.org/document/10058592) de Schulze-Foster _et al._ et [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann _et al._, nous ne montrons que nos deux meilleures approches : 
 - __VA_NN_2__
 - __Warmup__
 
 
-Tous les audios présentés sont issus des bases de données d'évaluation: __ChoralSingingDataset__ ou __Cantoria__.
+Tous les audios présentés ci-dessous sont issus des bases de données d'évaluation: __ChoralSingingDataset__ ou __Cantoria__.
 
 
 <br/>
@@ -49,7 +49,7 @@ Tous les audios présentés sont issus des bases de données d'évaluation: __Ch
 
 ## BC1song
 
-Pour ces résultas, nous avons entrainé les différents modèles sur la base de données __BC1Song__, et évalué sur la base de données __ChoralSingingDataset__.
+Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BC1Song__, et évalué sur la base de données __ChoralSingingDataset__.
 
 > Exemple de mélange audio
 <audio controls>
@@ -222,7 +222,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 
 ## BCBSQ
 
-Pour ces résultas, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __ChoralSingingDataset__.
+Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __ChoralSingingDataset__.
 
 > Exemple de mélange audio
 <audio controls>
@@ -397,7 +397,7 @@ Pour ces résultas, nous avons entrainé les différents modèles sur la base de
 # Résultats de l'entrainement sur des audios monophoniques
 
 Ces résultats correspondent à l'évaluation du modèle __US__ de Schulze-Foster _et al._ entraîné, à partir d'audios monophoniques, à séparer des audios comportant 2 sources (1S &rarr; 2S) et 4 sources (1S &rarr; 4S).  
-US<sub>2s</sub> / US<sub>4s</sub> : Modèles de référence entraînés et évalués sur le même nombre de sources (resp. 2s/4s),
+US<sub>2s</sub> / US<sub>4s</sub> : Modèles de référence entraînés et évalués sur le même nombre de sources (resp. 2s/4s).
 
 Nous avons entrainé les différents modèles sur la base de données __BCSBQ__, et évalué sur la base de données __ChoralSingingDataset__.
 
