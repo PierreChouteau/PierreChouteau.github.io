@@ -35,4 +35,4 @@ Dans le domaine de la séparation de sources musicales, les algorithmes les plus
 </div>
 </html>
 
-*Mots clés: Séparation de Sources Musicales, Estimations de fréquences fondamentales multiples, Assignement de voix, Apprentissage non supervisé, Architecture hybride*
+*Mots-clés: Séparation de Sources Musicales, Estimations de fréquences fondamentales multiples, Assignement de voix, Apprentissage non supervisé, Architecture hybride*
