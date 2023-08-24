@@ -768,7 +768,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
 <br/>
 
 ---
-# Généralisation sur un autre base de données - Cantoria
+# Généralisation sur une autre base de données - Cantoria
 
 Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __Cantoria__.
 
