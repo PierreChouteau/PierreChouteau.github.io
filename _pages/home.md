@@ -8,7 +8,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.6"
 #   overlay_image: /images/particles.jpg
-excerpt: "A fully differentiable model for unsupervised singing voice separation"
+excerpt: #"A fully differentiable model for unsupervised singing voice separation"
 ---
 
 Welcome to the demo website. All the mixtures examples presented in [Audio Examples](./audio.md) are taken from the test set. 

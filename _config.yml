@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "neon" # "default" # "air", "aqua", "contrast", "dark
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Transformation du Son et de la Musique par Synthèse Neuronale"
+title                    : "A fully differentiable model for unsupervised singing voice separation"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : ""
