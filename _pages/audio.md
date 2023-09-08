@@ -1,5 +1,5 @@
 ---
-title: "Exemples Audio"
+title: "Audio Examples"
 layout: single
 permalink: /audio
 author_profile: false
@@ -7,7 +7,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
-excerpt: "Résultats d'expériences" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
+excerpt: "Experimental results" # "Here you can find the audio files of the different pieces we worked on." - Example of a subtitle
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
@@ -18,46 +18,35 @@ toc_sticky: true
 </html>
 
 
-<!-- Pour ce projet, nous avons proposé un modèle d'apprentissage profond non supervisé pour de la séparation de sources musicales. Celui-ci est basé sur le modèle de séparation de sources __US__ de [Schulze-Foster et al.](https://ieeexplore.ieee.org/document/10058592), mais contrairement à ce dernier, il n'utilise aucune connaissance *a priori* sur les fréquences fondamentales des sources.
-
-Notre approche se base sur des modèles pré-entrainés, pour intégrer l'estimation des fréquences fondamentales à l'intérieur du modèle __US__, et nous avons expérimenté plusieurs méthodes d'entrainement pour atteindre notre objectif. 
-
-Nous présentons ici les résultats des deux méthodes les plus intéressantes : 
-- VA_NN_2
-- Warmup
-
-Les détails d'implémentation et de fonctionnement sont disponible dans le __rapport__.
+Welcome to the audio examples page. Here you'll find the results of our experiments, as well as audio examples of music source separation.
 
 
-Nous comparons nos résultats au modèle __US__ de Schulze-Foster et al., et à l'architecture [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann et al. -->
 
 
-Bienvenue sur la page des exemples audio. Vous trouverez ici les résultats de nos expériences, ainsi que des exemples audio de séparation de sources musicales.
-
-Pour les expériences où notre architecture est comparée au modèle [__US__](https://ieeexplore.ieee.org/document/10058592) de Schulze-Foster _et al._ et au modèle [__U-Net__](https://program.ismir2020.net/poster_5-14.html) de Petermann _et al._, nous ne montrons que nos deux meilleures approches : 
+For experiments where our architecture is compared to the [__US__](https://ieeexplore.ieee.org/document/10058592) model by Schulze-Foster _et al._ and the [__U-Net__](https://program.ismir2020.net/poster_5-14.html) model by Petermann _et al._, we show only our two best approaches:
 - __VA_NN_2__
 - __Warmup__
 
+All the audios presented below are taken from the evaluation datasets: __ChoralSingingDataset__ or __Cantoria__.
 
-Tous les audios présentés ci-dessous sont issus des bases de données d'évaluation: __ChoralSingingDataset__ ou __Cantoria__.
 
 
 <br/>
 
 ---
-# Résultats de la séparation de sources - Apprentissage Conjoint
+# Source separation results - Joint learning
 
 ## BC1song
 
-Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BC1Song__, et évalué sur la base de données __ChoralSingingDataset__.
+For these results, we trained the different models on the __BC1Song__ dataset, and evaluated on the __ChoralSingingDataset__ dataset.
 
-> Exemple de mélange audio
+> Audio Mix Example
 <audio controls>
   <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -168,7 +157,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
         </th>
       </tr>
       <tr>
-        <th> <strong> Basse </strong> </th>
+        <th> <strong> Bass </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
             <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav" type="audio/wav">
@@ -196,7 +185,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -222,15 +211,15 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
 
 ## BCBSQ
 
-Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __ChoralSingingDataset__.
+For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated on the __ChoralSingingDataset__ dataset.
 
-> Exemple de mélange audio
+> Audio Mix Example
 <audio controls>
   <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -341,7 +330,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
         </th>
       </tr>
       <tr>
-        <th> <strong> Basse </strong> </th>
+        <th> <strong> Bass </strong> </th>
         <th>
           <audio class="px-1" controls="" controlslist="nodownload">
             <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav" type="audio/wav">
@@ -369,7 +358,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -394,21 +383,22 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
 <br/><br/>
 
 --- 
-# Résultats de l'entrainement sur des audios monophoniques
+# Training results on monophonic audios
 
-Ces résultats correspondent à l'évaluation du modèle __US__ de Schulze-Foster _et al._ entraîné, à partir d'audios monophoniques, à séparer des audios comportant 2 sources (1S &rarr; 2S) et 4 sources (1S &rarr; 4S).  
-US<sub>2s</sub> / US<sub>4s</sub> : Modèles de référence entraînés et évalués sur le même nombre de sources (resp. 2s/4s).
+These results correspond to the evaluation of the __US__ model by Schulze-Foster _et al._ trained on monophonic audios to separate audios with 2 sources (1S &rarr; 2S) and 4 sources (1S &rarr; 4S).  
 
-Nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __ChoralSingingDataset__.
+US<sub>2s</sub> / US<sub>4s</sub> : Reference models trained and evaluated on the same number of sources (2s/4s respectively).
+
+We trained the various models on the __BCBSQ__ dataset, and evaluated them on the __ChoralSingingDataset__ dataset.
 
 ## Mono &rarr; 2 Sources
 
-> Exemple de mélange audio - Alto / Basse
+> Audio Mix Example - Alto / Bass
 <audio controls>
   <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_At_2-06_Bos_207_27.984.wav"/>
 </audio>
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -447,7 +437,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Basse </strong> </th>
+        <th> <strong> Bass </strong> </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_At_2-06_Bos_207_27.984_voice_b.wav"/>
@@ -465,7 +455,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -485,12 +475,12 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
 
 ---
 
-> Exemple de mélange audio - Soprano / Alto
+> Audio Mix Example - Soprano / Alto
 <audio controls>
   <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_Sno_208_At_2-06_27.984.wav"/>
 </audio>
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -547,7 +537,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -567,12 +557,12 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
 
 --- 
 
-> Exemple de mélange audio - Tenor / Basse
+> Audio Mix Example - Tenor / Bass
 <audio controls>
   <source src="/audio/mono/BCBSQ/mono_to_2sources/mix/mix_el_rossinyol_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -611,7 +601,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Basse </strong> </th>
+        <th> <strong> Bass </strong> </th>
         <th>
           <audio controls="">
             <source src="/audio/mono/BCBSQ/mono_to_2sources/target_sources/target_sources_el_rossinyol_Tor2-09_Bos_207_27.984_voice_b.wav"/>
@@ -629,7 +619,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -649,12 +639,12 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
 
 ## Mono &rarr; 4 Sources
 
-> Exemple de mélange audio
+> Audio Mix Example
 <audio controls>
   <source src="/audio/Apprentissage_Conjoint/Melange/mix_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
 </audio>
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -729,7 +719,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Basse </strong> </th>
+        <th> <strong> Bass </strong> </th>
         <th>
           <audio controls="">
             <source src="/audio/Apprentissage_Conjoint/Original_sources/target_sources_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984_voice_b.wav"/>
@@ -747,7 +737,7 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
@@ -768,18 +758,18 @@ Nous avons entrainé les différents modèles sur la base de données __BCBSQ__,
 <br/>
 
 ---
-# Généralisation sur une autre base de données - Cantoria
+# Generalization on another dataset - Cantoria
 
-Pour ces résultats, nous avons entrainé les différents modèles sur la base de données __BCBSQ__, et évalué sur la base de données __Cantoria__.
+For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated them on the __Cantoria__ dataset.
 
 
-> Exemple de mélange audio
+> Audio Mix Example
 <audio controls="">
   <source src="/audio/cantoria/mix/mix_CEA_satb_15.984.wav"/>
 </audio>
 
 
-> Voix séparées issues du filtrage de Wiener
+> Separated voices from Wiener filtering
 <html>
   <table>
     <thread>
@@ -872,7 +862,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
         </th>
       </tr>
       <tr>
-        <th> <strong> Basse </strong> </th>
+        <th> <strong> Bass </strong> </th>
         <th>
           <audio controls="">
             <source src="/audio/cantoria/target_sources/target_sources_CEA_satb_15.984_voice_b.wav"/>
@@ -895,7 +885,7 @@ Pour ces résultats, nous avons entrainé les différents modèles sur la base d
         </th>
       </tr>
       <tr>
-        <th> <strong> Mélange re-synthétisé </strong> </th>
+        <th> <strong> Re-synthesized mix </strong> </th>
         <th></th>
         <th>
           <audio controls="">
