@@ -25,7 +25,7 @@ Welcome to the audio examples page. Here you'll find the results of our experime
 - __VA_NN_2__
 - __Warmup__ -->
 
-All the audios presented below are taken from the evaluation datasets: __ChoralSingingDataset__ or __Cantoria__.
+All the audios presented below are taken from the evaluation datasets: __ChoralSingingDataset__ or __Cantoría__.
 
 
 ---
@@ -33,7 +33,7 @@ All the audios presented below are taken from the evaluation datasets: __ChoralS
 
 ## BC1song
 
-For these results, we trained the different models on the __BC1Song__ dataset, and evaluated on the __ChoralSingingDataset__ dataset. These audio examples are related to the table 1a of the paper.
+For these results, we trained the different models on the __BC1Song__ dataset, and evaluated on the __ChoralSingingDataset__ dataset. These results are showed in the table 1a of the paper, and the audio examples are presented below.
 
 > Audio Mix Example
 <audio controls>
@@ -262,7 +262,7 @@ For these results, we trained the different models on the __BC1Song__ dataset, a
 
 ## BCBSQ
 
-For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated on the __ChoralSingingDataset__ dataset. These audio examples are related to the table 1b of the paper.
+For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated on the __ChoralSingingDataset__ dataset. These results are showed in the table 1b of the paper, and the audio examples are presented below.
 
 > Audio Mix Example
 <audio controls>
@@ -481,9 +481,9 @@ For these results, we trained the different models on the __BCBSQ__ dataset, and
 
 
 ---
-# Generalization on another dataset - Cantoria
+# Generalization on another dataset - Cantoría
 
-For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated them on the __Cantoria__ dataset. These audio examples are related to the table 3 of the paper.
+For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated them on the __Cantoría__ dataset. These results are showed in the table 3 of the paper, and the audio examples are presented below.
 
 
 > Audio Mix Example
