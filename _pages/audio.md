@@ -481,7 +481,7 @@ For these results, we trained the different models on the __BCBSQ__ dataset, and
 
 
 ---
-# Generalization on another dataset - Cantoría
+# Generalization capabilities on a new dataset: Cantoría
 
 For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated them on the __Cantoría__ dataset. These results are showed in the table 3 of the paper, and the audio examples are presented below.
 
