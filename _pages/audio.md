@@ -33,7 +33,7 @@ All the audios presented below are taken from the evaluation datasets: __ChoralS
 
 ## BC1song
 
-For these results, we trained the different models on the __BC1Song__ dataset, and evaluated on the __ChoralSingingDataset__ dataset.
+For these results, we trained the different models on the __BC1Song__ dataset, and evaluated on the __ChoralSingingDataset__ dataset. These audio examples are related to the table 1a of the paper.
 
 > Audio Mix Example
 <audio controls>
@@ -262,7 +262,7 @@ For these results, we trained the different models on the __BC1Song__ dataset, a
 
 ## BCBSQ
 
-For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated on the __ChoralSingingDataset__ dataset.
+For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated on the __ChoralSingingDataset__ dataset. These audio examples are related to the table 1b of the paper.
 
 > Audio Mix Example
 <audio controls>
@@ -483,7 +483,7 @@ For these results, we trained the different models on the __BCBSQ__ dataset, and
 ---
 # Generalization on another dataset - Cantoria
 
-For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated them on the __Cantoria__ dataset.
+For these results, we trained the different models on the __BCBSQ__ dataset, and evaluated them on the __Cantoria__ dataset. These audio examples are related to the table 3 of the paper.
 
 
 > Audio Mix Example
