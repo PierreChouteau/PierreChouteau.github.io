@@ -465,6 +465,16 @@ For these results, we trained the different models on the __BCBSQ__ dataset, and
         <th></th>
         <th>
           <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
+            <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_0/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
+          </audio>
+        </th>
+        <th>
+          <audio controls="">
             <source src="/audio/Apprentissage_Conjoint/BCBQ/VA_NN_1/mix_reconstruct_el_rossinyol_Sno_208_At_2-06_Tor2-09_Bos_207_27.984.wav"/>
           </audio>
         </th>
