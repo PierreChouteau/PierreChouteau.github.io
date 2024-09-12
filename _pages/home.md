@@ -5,19 +5,19 @@ permalink: /
 author_profile: false
 classes: wide
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.6"
-#   overlay_image: /images/particles.jpg
-excerpt: #"A fully differentiable model for unsupervised singing voice separation"
+  overlay_color: "#cc3131" #"#000"
+  overlay_filter: "0.3"
+excerpt: #"title"
 ---
 
-Welcome to the demo website. All the mixtures examples presented in [Audio Examples](./audio.md) are taken from the test set. 
 
+Welcome to the demo website. This website is under construction.
+
+You will find audio examples [here](./audio.md) and addtionnal results here.
 
 # Abstract
 
-A novel model was recently proposed by [Schulze-Forster & al.](https://ieeexplore.ieee.org/document/10058592) for unsupervised music source separation. This model allows to tackle some of the major shortcomings of some modern source separation frameworks. Specifically, it eliminates the need for isolated sources during training, performs efficiently with limited data, and can handle homogeneous sources (such as singing voice). Nevertheless, this model relies on an external multipitch estimator and incorporates an adhoc voice assignment procedure. In this paper, we propose to extend this framework and to build a complete, fully differentiable model by integrating a multipitch estimator and a novel differentiable voice assignment module within the core model. We show the merits of our approach though a set of experiments, and we highlight in particular its potential for processing diverse and unseen data.
+People often listen to music in noisy environments, seeking to isolate themselves from ambient sounds. Indeed, a music signal can mask some of the noise's frequency components due to the effect of simultaneous masking. In this article, we propose a neural network based on a psychoacoustic masking model, designed to enhance the music's ability to mask ambient noise by reshaping its spectral envelope with predicted filter frequency responses. The model is trained with a perceptual loss function that balances two constraints: effectively masking the noise while preserving the original music mix and the user's chosen listening level. We evaluate our approach on simulated data replicating a user's experience of listening to music with headphones in a noisy environment. The results, based on defined objective metrics, demonstrate that our system improves the state of the art.
 {: .text-justify}
 
-
-*Index Terms - Unsupervised source separation, multiple singing voices, differentiable models, deep learning*
+**Index Terms** - Ambient noise masking, deep filtering, psychoacoustics
